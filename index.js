@@ -12,3 +12,10 @@ function showSlides() {
 }
 
 showSlides();
+
+// const parallaxImage = document.querySelector('.parallax-bg');
+
+// window.addEventListener('scroll', function() {
+//     let offset = window.scrollY;
+//     parallaxImage.style.top = offset * 0.5 + 'px'; 
+// });

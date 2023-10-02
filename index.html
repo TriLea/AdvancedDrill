@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Company Portfolio</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body>
-    <!-- Parallax Background -->
-    <!-- <div class="parallax-content">
-        <img src="venus_map.jpg" class="parallax-bg" alt="Parallax Background">
-    </div> -->
 
-    <!-- Slideshow -->
-    <div class="slideshow-container">
-        <div class="slide fade">
-            <img src="edit4.png" alt="Image 1">
+<body>
+
+    <!--home, about, services, contact-->
+    <!--home request a quote fill out-->
+    <!--about us-->
+    <!--services-->
+    <!--contact us-->
+
+    <!-- <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+     -->
+
+    <nav class="navbar">
+        <div class="left-icons">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link"><i class="fas fa-phone"></i></a>
         </div>
-        <div class="slide fade">
-            <img src="edit5.png" alt="Image 2">
+        <div class="right-icons">
+            <i class="fas fa-bars" id="hamburger"></i>
         </div>
-        <div class="slide fade">
-            <img src="drill.webp" alt="Image 3">
+        <div class="dropdown" id="menu">
+            <a href="#" class="nav-link">Page 1</a>
+            <a href="#" class="nav-link">Page 2</a>
+            <a href="#" class="nav-link">Page 3</a>
         </div>
-        <!-- Add more slides as needed -->
+    </nav>
+
+    <div class="quote-form">
+        <form id="requestQuoteForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone Number" pattern="^[0-9-+\s()]*$"
+                title="Please enter a valid phone number." required>
+            <textarea id="details" rows="4" placeholder="Details of your project" required></textarea>
+            <button type="submit">Request a Quote</button>
+            <p id="error-message" class="error-message"></p>
+        </form>
     </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Information about the company goes here.</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+    <!-- Slideshow -->
+    <!-- <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="./images/as2.jpg" alt="Image 1">
+        </div>
+        <div class="slide fade">
+            <img src="./images/drill.webp" alt="Image 2">
+        </div>
+        <div class="slide fade">
+            <img src="./images/edit5.png" alt="Image 3">
+        </div>
+    </div> -->
 
     <script src="index.js"></script>
 </body>
+
 </html>

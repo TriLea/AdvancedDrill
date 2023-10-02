@@ -1,18 +1,17 @@
-// let slideIndex = 0;
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
 
-// function showSlides() {
-//     const slides = document.getElementsByClassName("slide");
+function showSlide(index) {
+    slides[currentSlide].style.opacity = '0';
+    currentSlide = index;
+    if (currentSlide >= slides.length) currentSlide = 0;
+    slides[currentSlide].style.opacity = '1';
+}
 
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) { slideIndex = 1 }
-//     slides[slideIndex - 1].style.display = "block";
-//     setTimeout(showSlides, 4000); // Change image every 2 seconds
-// }
-
-// showSlides();
+setInterval(() => {
+    let nextSlide = currentSlide + 1;
+    showSlide(nextSlide);
+}, 3000); // Change images every 3 seconds
 
 document.getElementById('requestQuoteForm').addEventListener('submit', function (e) {
     e.preventDefault();

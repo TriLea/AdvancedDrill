@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drilling Company</title>
     <link rel="stylesheet" href="styleSheet.css">
 </head>
+
 <body>
 
     <div class="navbar">
-        <a href="tel:1234567890"><img src="phone-icon.png" alt="Phone"></a>
+        <a href="tel:50949611279"><img src="phone-icon.png" alt="Phone"></a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
@@ -22,19 +24,41 @@
     <div class="section" id="about">
         <h2>About Us</h2>
         <p>
-            <!-- Add about section content here -->
-            Information about the drilling company...
+            With experience comes professionalism. 
+            <br>
+            <br>
+            No job too big or small. Competitive rates, 
+            call for a free proposal for your project. 
+            Over 25 years experience in the Pacific Northwest.
+            Serving all of Washington.
+            state, based out of Snohomosish 
         </p>
     </div>
 
     <div class="section" id="contact">
         <h2>Contact Us</h2>
+        <h3>Request a Free Quote</h3>
+        <form id="quoteForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone (optional):</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+
+            <label for="details">Project Details:</label><br>
+            <textarea id="details" name="details" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
         <p>
-            <!-- Add contact details here -->
-            Phone: 123-456-7890<br>
-            Email: info@drillingcompany.com
+            <!-- Phone: 509-496-1279<br>
+            Email: wbetlaf@msn.com -->
         </p>
     </div>
 
 </body>
+
 </html>

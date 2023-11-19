@@ -1,32 +1,49 @@
 body { 
-    font-family: Arial, sans-serif; 
-}
-.navbar { 
-    background-color: #333; 
-    overflow: hidden; 
-}
-.navbar a { 
-    float: left; 
-    display: block; 
-    color: white; 
-    text-align: center; 
-    padding: 14px 16px; 
-    text-decoration: none; 
-}
-.navbar a:hover { 
-    background-color: #ddd; 
-    color: black; 
-}
-.logo { 
-    text-align: center; 
-    margin: 20px; 
+    font-family: Arial, sans-serif;
+    display: flex; /* Add Flexbox layout */
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center children horizontally */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    padding-top: 60px; /* Adjust based on the height of your navbar */
 }
 
-.logo img {  /* Targeting the img element inside the .logo div */
+.navbar { 
+    background-color: #333;
+    overflow: hidden;
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures navbar is above other elements */
+}
+
+.navbar a { 
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover { 
+    background-color: #ddd;
+    color: black;
+}
+
+.logo { 
+    text-align: center;
+    margin: 20px 0; /* Adjusted margin */
+}
+
+.logo img { /* Targeting the img element inside the .logo div */
     width: 50%;
     height: auto; /* Preserve aspect ratio */
 }
 
 .section { 
-    margin: 20px; 
+    width: 80%; /* Adjust width as needed */
+    margin: 20px;
+    text-align: center; /* Center content */
 }
